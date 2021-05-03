@@ -11,7 +11,9 @@ Check the voice converted samples of our submitted SSW11 paper here:
 
 ### High intelligibility speakers
 
-[Link](url) and ![Image](src)
+ <iframe src="SAMPLES/high/M10-to-M08/M10_B2_CW45_M7_to_M08.wav" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+
+[Link](https://raw.githubusercontent.com/myName/myRepo/master/vendor/assets/music/Tetris.mp3) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
