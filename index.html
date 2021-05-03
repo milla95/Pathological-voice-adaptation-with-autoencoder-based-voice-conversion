@@ -11,9 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Pathological voice adaptation with autoencoder-based voice conversion</h1>
-      <a href="https://github.com/milla95/pathologicalVC" class="btn">Code</a>
-      <a href="https://www.isca-speech.org/archive/VCC_BC_2020/pdfs/VCC2020_paper_21.pdf" class="btn">Paper</a>
+      <h1 class="project-name">Pathological voice adaptation with autoencoder-based voice conversion</h1>      
     </section>
 
     <section class="main-content">
@@ -27,401 +25,75 @@
       <h2>Low intelligibility</h2>      
       <table>
         <tr>
-          <td>M12</td>
-          <td><audio controls><source src="SAMPLES/low/M12 GT/M12_B2_UW100_M3.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30002.wav" type="audio/wav"></audio></td>
+          <td>M04</td>
+          <td><audio controls><source src="SAMPLES/low/M04 GT/M04_B2_UW17_M8.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/low/M04 GT/M04_B2_CW60_M5.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td>M04</td>
-          <td><audio controls><source src="html/audio/nat/TEF1/E10051.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TEF1/E10052.wav" type="audio/wav"></audio></td>
+          <td>M12</td>
+          <td><audio controls><source src="SAMPLES/low/M12 GT/M12_B2_UW100_M3.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/low/M12 GT/M12_B2_CW96_M7.wav" type="audio/wav"></audio></td>
+        </tr>        
+        <tr>
+          <td>M04 to M12</td>
+          <td><audio controls><source src="SAMPLES/low/M04-to-M12/M04_B2_UW17_M8_to_M12.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/low/M04-to-M12/M04_B2_CW60_M5_to_M12.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
           <td>M12 to M04</td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TEF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TEF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>M04 to M12</td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TEF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TEF1_E30002.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/low/M12-to-M04/M12_B2_UW100_M3_to_M04.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/low/M12-to-M04/M12_B2_UW100_M3_to_M04.wav" type="audio/wav"></audio></td>
         </tr>
       </table>
 
-      <h3>SEF1-TEM1</h3>
+      <h2>Mid intelligibility</h2>      
       <table>
         <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30002.wav" type="audio/wav"></audio></td>
+          <td>M05</td>
+          <td><audio controls><source src="SAMPLES/mid/M05 GT/M05_B2_C13_M5.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/mid/M05 GT/M05_B2_C13_M5.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TEM1/E10051.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TEM1/E10052.wav" type="audio/wav"></audio></td>
+          <td>M11</td>
+          <td><audio controls><source src="SAMPLES/mid/M11 GT/M11_B2_UW54_M6.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/mid/M11 GT/M11_B2_UW9_M6.wav" type="audio/wav"></audio></td>
+        </tr>        
+        <tr>
+          <td>M05 to M11</td>
+          <td><audio controls><source src="SAMPLES/mid/M05-to-M11/M05_B2_C13_M5_to_M11.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/mid/M05-to-M11/M05_B2_C7_M6_to_M11.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TEM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TEM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TEM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TEM1_E30002.wav" type="audio/wav"></audio></td>
+          <td>M11 to M05</td>
+          <td><audio controls><source src="SAMPLES/mid/M11-to-M05/M11_B2_UW54_M6_to_M05.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/mid/M11-to-M05/M11_B2_UW9_M6_to_M05.wav" type="audio/wav"></audio></td>
         </tr>
       </table>
+      <h2>High intelligibility</h2>      
+      <table>
+        <tr>
+          <td>M08</td>
+          <td><audio controls><source src="SAMPLES/high/M08 GT/M08_B2_CW44_M4.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/high/M08 GT/M08_B2_CW11_M3.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>M10</td>
+          <td><audio controls><source src="SAMPLES/high/M10 GT/M10_B2_CW45_M7.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/high/M10 GT/M10_B2_C5_M8.wav" type="audio/wav"></audio></td>
+        </tr>        
+        <tr>
+          <td>M08 to M10</td>
+          <td><audio controls><source src="SAMPLES/high/M08-to-M10/M08_B2_CW44_M4_to_M10.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/high/M08-to-M10/M08_B2_CW11_M3_to_M10.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>M10 to M08</td>
+          <td><audio controls><source src="SAMPLES/high/M10-to-M08/M10_B2_CW45_M7_to_M08.wav" type="audio/wav"></audio></td>
+          <td><audio controls><source src="SAMPLES/high/M10-to-M08/M10_B2_C5_M8_to_M08.wav" type="audio/wav"></audio></td>
+        </tr>
+      </table>
+
       
-      <h3>SEM1-TEF1</h3>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TEF1/E10051.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TEF1/E10052.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TEF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TEF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TEF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TEF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h3>SEM1-TEM1</h3>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TEM1/E10051.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TEM1/E10052.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TEM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TEM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TEM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TEM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h2>Task 2: Cross-lingual voice conversion</h2>
-      <p> Target speaker does not speak source speaker's language.</p>
-      <h3>SEF1-TFF1</h3>
-      <p>English - Finnish </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TFF1/F10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TFF1/F10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TFF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TFF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TFF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TFF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h3>SEF1-TFM1</h3>
-      <p>English - Finnish </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TFM1/F10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TFM1/F10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TFM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TFM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TFM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TFM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h3>SEM1-TFF1</h3>
-      <p>English - Finnish </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TFF1/F10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TFF1/F10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TFF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TFF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TFF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TFF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h3>SEM1-TFM1</h3>
-      <p>English - Finnish </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TFM1/F10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TFM1/F10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TFM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TFM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TFM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TFM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h3>SEF1-TGF1</h3>
-      <p>English - German </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TGF1/G10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TGF1/G10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TGF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TGF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TGF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TGF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h3>SEF1-TGF1</h3>
-      <p>English - German </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TGM1/G10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TGM1/G10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TGM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TGM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TGM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TGM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h3>SEM1-TGF1</h3>
-      <p>English - German </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TGF1/G10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TGF1/G10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TGF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TGF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TGF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TGF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-      <h3>SEM1-TGM1</h3>
-      <p>English - German </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TGM1/G10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TGM1/G10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TGM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TGM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TGM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TGM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-    <h3>SEF1-TMF1</h3>
-      <p>English - Mandarin </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TMF1/M10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TMF1/M10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TMF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TMF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TMF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TMF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-    <h3>SEF1-TMM1</h3>
-      <p>English - Mandarin </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEF1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TMM1/M10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TMM1/M10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TMM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEF1_TMM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TMM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEF1_TMM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-    <h3>SEM1-TMF1</h3>
-      <p>English - Mandarin </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TMF1/M10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TMF1/M10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TMF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TMF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TMF1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TMF1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
-    <h3>SEM1-TMM1</h3>
-      <p>English - Mandarin </p>
-      <table>
-        <tr>
-          <td>Source</td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/SEM1/E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Target</td>
-          <td><audio controls><source src="html/audio/nat/TMM1/M10001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/nat/TMM1/M10002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Baseline</td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TMM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/baseline/SEM1_TMM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td>Proposed</td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TMM1_E30001.wav" type="audio/wav"></audio></td>
-          <td><audio controls><source src="html/audio/proposed/SEM1_TMM1_E30002.wav" type="audio/wav"></audio></td>
-        </tr>
-      </table>
-
       <footer class="site-footer">       
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
       </footer>
